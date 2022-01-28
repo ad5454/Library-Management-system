@@ -103,4 +103,4 @@ i = input = count = 0;
 		}
 	}
 	return 0;
-}1
+}
