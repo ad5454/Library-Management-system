@@ -17,7 +17,7 @@ int main()
 	// Create a instance
 	struct library lib[100];
 
-	char ar_nm[30], bk_nm[30];
+	char ar_nm[30];
 
 	// Keep the track of the number of books available in the library
 	int i, input, count;
@@ -55,24 +55,25 @@ i = input = count = 0;
 			printf("Enter price = ");
 			scanf("%f", &lib[i].price);
 			count++;
+			i++;
 
 			break;
 
 		// Print book information
 		case 2:
-			printf("you have entered the following information\n");
+			printf("You have entered the following information\n");
 			for (i = 0; i < count; i++) {
 
-				printf("book name = %s",
+				printf("Book name = %s",
 					lib[i].book_name);
 
-				printf("\t author name = %s",
+				printf("\tAuthor name = %s",
 					lib[i].author);
 
-				printf("\t pages = %d",
+				printf("\tPages = %d",
 					lib[i].pages);
 
-				printf("\t price = %f",
+				printf("\tPrice = %.2f\n",
 					lib[i].price);
 			}
 			break;
@@ -86,7 +87,7 @@ i = input = count = 0;
 				if (strcmp(ar_nm,
 						lib[i].author)
 					== 0)
-					printf("%s %s %d %f",
+					printf("Book name = %s\tAuthor name = %s\tPages = %d\tPrice = %.2f\n",
 						lib[i].book_name,
 						lib[i].author,
 						lib[i].pages,
@@ -100,6 +101,7 @@ i = input = count = 0;
 			break;
 		case 5:
 			exit(0);
+		default: printf("\nPlease choose from the given options\n");
 		}
 	}
 	return 0;
