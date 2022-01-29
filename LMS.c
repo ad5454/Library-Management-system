@@ -53,7 +53,7 @@ i = input = count = 0;
 			scanf("%d", &lib[i].pages);
 
 			printf("Enter price = ");
-			scanf("%.2f", &lib[i].price);
+			scanf("%f", &lib[i].price);
 			count++;
 
 			break;
