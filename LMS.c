@@ -21,7 +21,7 @@ int main()
 
 	// Keep the track of the number of books available in the library
 	int i, input, count;
-i = input = count = 0;
+	i = input = count = 0;
 
 	// Iterate the loop
 	while (input != 5) {
@@ -29,8 +29,7 @@ i = input = count = 0;
 		printf("\n\n********###### WELCOME TO E-LIBRARY #####********\n");
 		printf("\n\n1. Add book information\n2. Display book information\n");
 		printf("3. List all books of given author\n");
-		printf(
-			"4. List the count of books in the library\n");
+		printf("4. List the count of books in the library\n");
 		printf("5. Exit");
 
 		// Enter the book details
@@ -97,7 +96,7 @@ i = input = count = 0;
 
 		// Print total count
 		case 4:
-			printf("\n No. of books in Library : %d",count);
+			printf("\nNo. of books in Library : %d",count);
 			break;
 		case 5:
 			exit(0);
